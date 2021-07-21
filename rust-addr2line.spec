@@ -5,8 +5,8 @@
 %global crate addr2line
 
 Name:           rust-%{crate}
-Version:        0.10.0
-Release:        2%{?dist}
+Version:        0.15.2
+Release:        1
 Summary:        Cross-platform symbolication library written in Rust, using `gimli`
 
 # Upstream license specification: Apache-2.0/MIT
@@ -142,49 +142,3 @@ which use "std-object" feature of "%{crate}" crate.
 %check
 %cargo_test
 %endif
-
-%changelog
-* Thu Jan 30 2020 Fedora Release Engineering <releng@fedoraproject.org> - 0.10.0-2
-- Rebuilt for https://fedoraproject.org/wiki/Fedora_32_Mass_Rebuild
-
-* Mon Dec 16 2019 Josh Stone <jistone@redhat.com> - 0.10.0-1
-- Update to 0.10.0
-
-* Fri Jul 26 2019 Fedora Release Engineering <releng@fedoraproject.org> - 0.9.0-2
-- Rebuilt for https://fedoraproject.org/wiki/Fedora_31_Mass_Rebuild
-
-* Tue May 07 15:32:08 CEST 2019 Igor Gnatenko <ignatenkobrain@fedoraproject.org> - 0.9.0-1
-- Update to 0.9.0
-
-* Sun Feb 10 2019 Igor Gnatenko <ignatenkobrain@fedoraproject.org> - 0.8.0-1
-- Update to 0.8.0
-
-* Sat Feb 02 2019 Fedora Release Engineering <releng@fedoraproject.org> - 0.7.0-5
-- Rebuilt for https://fedoraproject.org/wiki/Fedora_30_Mass_Rebuild
-
-* Tue Nov 27 2018 Josh Stone <jistone@redhat.com> - 0.7.0-4
-- Bump to object 0.11
-
-* Tue Nov 13 2018 Josh Stone <jistone@redhat.com> - 0.7.0-3
-- Adapt to new packaging
-
-* Tue Oct 02 2018 Josh Stone <jistone@redhat.com> - 0.7.0-2
-- Bump object to 0.10
-
-* Sat Jul 28 2018 Igor Gnatenko <ignatenkobrain@fedoraproject.org> - 0.7.0-1
-- Update to 0.7.0
-
-* Sat Jul 14 2018 Fedora Release Engineering <releng@fedoraproject.org> - 0.6.0-2
-- Rebuilt for https://fedoraproject.org/wiki/Fedora_29_Mass_Rebuild
-
-* Sat Apr 14 2018 Josh Stone <jistone@redhat.com> - 0.6.0-1
-- Update to 0.6.0
-
-* Fri Feb 09 2018 Fedora Release Engineering <releng@fedoraproject.org> - 0.5.0-3
-- Rebuilt for https://fedoraproject.org/wiki/Fedora_28_Mass_Rebuild
-
-* Mon Jan 08 2018 Igor Gnatenko <ignatenkobrain@fedoraproject.org> - 0.5.0-2
-- Rebuild for rust-packaging v5
-
-* Fri Jan 05 2018 Igor Gnatenko <ignatenkobrain@fedoraproject.org> - 0.5.0-1
-- Initial package
