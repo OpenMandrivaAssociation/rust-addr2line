@@ -6,7 +6,7 @@
 
 Name:           rust-%{crate}
 Version:        0.15.2
-Release:        1
+Release:        2
 Summary:        Cross-platform symbolication library written in Rust, using `gimli`
 
 # Upstream license specification: Apache-2.0/MIT
