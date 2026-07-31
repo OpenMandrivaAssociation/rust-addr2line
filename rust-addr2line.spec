@@ -5,8 +5,8 @@
 %global crate addr2line
 
 Name:           rust-%{crate}
-Version:        0.15.2
-Release:        3
+Version:        0.27.0
+Release:        1
 Summary:        Cross-platform symbolication library written in Rust, using `gimli`
 
 # Upstream license specification: Apache-2.0/MIT
